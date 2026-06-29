@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+<div class="container mt-5">
+
+    <div class="card shadow">
+        <div class="card-header bg-primary text-white text-center">
+            <h3>Admin Dashboard</h3>
+        </div>
+
+        <div class="card-body">
+            <h5>Welcome, {{ username }}</h5>
+            <p><strong>Role:</strong> Administrator</p>
+
+            <hr>
+
+            <h5>Implemented Zero Trust Features</h5>
+            <ul>
+                <li>User Authentication</li>
+                <li>Multi-Factor Authentication</li>
+                <li>Role-Based Access Control</li>
+                <li>Activity Logging</li>
+            </ul>
+
+            <a href="/activity" class="btn btn-success">View Activity Log</a>
+            <a href="/logout" class="btn btn-danger">Logout</a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
